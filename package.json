@@ -1,0 +1,16 @@
+{
+  "name": "dwd-node-twilio",
+  "version": "0.0.1",
+  
+  "dependencies": {
+    "express": "3.0.0rc5",
+    "hogan-express" : "0.3.3",
+    "request" : "2.16.6",
+    "twilio" : "1.1.0"
+  },
+
+  "engines" : {
+    "node" : "0.10.x",
+    "npm" : "1.2.x"
+  }
+}
