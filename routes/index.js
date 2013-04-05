@@ -56,7 +56,7 @@ exports.incoming_call = function(req, res) {
 	console.log(req.body);
 
 	resp.say('Welcome to Acme Customer Service!').gather({
-        action:'https://dwd-nodejs-twilio.herokuapp.com/incoming/digits',
+        action:'http://dwd-nodejs-twilio.herokuapp.com/incoming/digits',
         finishOnKey:'*'
     }, function(node) { //note the use of the "node" variable in the anonymous function
 
@@ -65,6 +65,8 @@ exports.incoming_call = function(req, res) {
             .say('Press 2 for British customer service', { language:'en-gb' });
 
     });
+    
+    console.log(resp.toString());
 }
 
 exports.incoming_digits = function(req,res) {
