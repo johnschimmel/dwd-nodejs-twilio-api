@@ -65,8 +65,12 @@ exports.incoming_call = function(req, res) {
             .say('Press 2 for British customer service', { language:'en-gb' });
 
     });
+
+	console.log(resp.toString());
+
+    res.writeHead(200, {'Content-Type': 'text/xml'});
+    res.end(resp.toString());
     
-    console.log(resp.toString());
 }
 
 exports.incoming_digits = function(req,res) {
