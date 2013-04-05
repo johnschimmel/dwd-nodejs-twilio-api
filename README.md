@@ -1,6 +1,20 @@
-## Heroku ExpressJS Boilerplate
+## Twilio
 
-Boilerplate for ExpressJS
+## !!! IMPORTANT - MUST RUN NODE VERSION 0.10.X !!!
+
+### Register for Twilio API
+
+Sign up <https://www.twilio.com/try-twilio>
+
+### Get the Twilio Access info
+
+* PUT TWILIO ACCOUNT_SID AND AUTH_ID INTO .ENV
+* ADD TWILIO ACCOUNT_SID AND AUTH_ID TO HEROKU CONFIG
+
+	heroku config:add TWILIO_ACCT_SID=YOUR-ACCT-ID
+	heroku config:add TWILIO_AUTH_TOKEN=YOUR-AUTH-ID
+
+
 
 * Routes directory
 * Hogan-Express template engine (w/ layouts)
